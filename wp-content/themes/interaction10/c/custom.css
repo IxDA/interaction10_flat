@@ -1,0 +1,177 @@
+/* ----------------------------------------------------
+
+Description:	Custom style layouts
+Filename:			custom.css
+Version:			1.0
+Created:			2009.4.28
+LastModified:	2009.04.28 (jlt)
+
+---------------------------------------------------- */
+
+body 								{color:#111; background:#111; margin:0;}
+a 									{color:#C06;}
+a:hover							{border-bottom:solid 2px #C06; border-collapse:collapse; color:#C06;}
+
+.clearfix:after 		{content:"."; display:block; height:0; font-size:0; line-height:0; clear:both; visibility:hidden; }
+.clearfix 					{min-height:1px; height:auto !important; height:1px; }
+
+.inner						{border:1px solid #444; background:url(../i/hdr_photo.png) no-repeat #232323; height:auto;}
+
+#Header, #Main, 
+#Article, 
+#Sidebar, #Footer 	{background:transparent;}
+
+
+/* Header elements.
+-------------------------------------------------------------- 
+#Header             {height:180px;}
+
+#Logo               {width:460px; margin: 0; padding:0;}
+#Logo a             {display:block; text-indent:-9999px; background:transparent url(../i/logo_ixd10.png) no-repeat 0 0; width:420px; height:72px; margin:10px 15px 0 15px; }
+
+#Cobranding         {float: right; padding:5px 15px 0 15px; display:inline;}
+#Cobranding h3      {color: #ffffff; font-weight:normal;}
+#Cobranding a.scad  {display:block; text-indent:-9999px; background:transparent url(../i/logo_scad.png) no-repeat 0 0; width:160px; height:60px; }
+#Cobranding alpha {display:block; text-indent:-9999px; background:transparent url(../i/logo_ixd.png) no-repeat 0 0; width:160px; height:60px;margin-top:-10px;}
+#Cobranding a.ixda:hover,
+#Cobranding a.scad:hover  {height: 58px;}*/
+
+/* Nav elements.
+-------------------------------------------------------------- */
+#Nav													{width:570px; height:45px; display:inline; margin:0; font-size:18px; font-weight:lighter;}
+#Nav ul												{float:left; padding:0;}
+#Nav li 											{margin-bottom:10px; padding:10px 12px; list-style-type: none; display:inline; background:#111; opacity:.9; filter:alpha(opacity=90);}
+#Nav li a:link, 
+#Nav li a:visited							{color:#C06; text-decoration:none;}
+#Nav li a:hover 							{color:#AAA; border-bottom:1px solid #C06;}
+
+#About #Nav1,
+#Program #Nav2,
+#Submissions #Nav3						{background-color:#C06; border-bottom:0; opacity:.6; filter:alpha(opacity=60);}
+
+#About #Nav1 a:link,
+#About #Nav1 a:visited,
+#Program #Nav2 a:link,
+#Program #Nav2 a:visited,
+#Submissions #Nav3 a:link,
+#Submissions #Nav3 a:visited	{font-weight:normal; border-bottom:0; font-size:18px; color:#fff; opacity:1; filter:alpha(opacity=100);}
+
+#About #Nav1 a:hover,
+#Program #Nav2 a:hover,
+#Submissions #Nav3 a:hover		{border-bottom:solid 2px #C06; border-collapse:collapse; color:#AAA;}
+
+/* Subnav elements.
+-------------------------------------------------------------- */
+#Subnav									{float:right;  margin:0; font-size:18px; text-transform:uppercase;}
+#Subnav ul							{float:left; padding:0;}
+#Subnav li 							{margin:0; padding:0 3px; list-style-type: none; display:inline;}
+#Subnav li a:link, 
+#Subnav li a:visited		{color:#C06; text-decoration:none;}
+#Subnav li a:hover 			{color:#C06; border-bottom:1px solid #C06;}
+
+.sessions #Subnav1,
+.documentaries #Subnav2,
+.art #Subnav3						{color:#111; border-bottom:0;}
+
+.sessions #Subnav1 a:link,
+.sessions #Subnav1 a:visited,
+.documentaries #Subnav2 a:link,
+.documentaries #Subnav2 a:visited,
+.art #Subnav3 a:link,
+.art #Subnav3 a:visited {color:#111; border-bottom:0;}
+
+.sessions #Subnav1 a:hover,
+.documentaries #Subnav2 a:hover,
+.art #Subnav3 a:hover		{}
+
+
+/* Main elements.
+-------------------------------------------------------------- */
+/*h2, h3                  {color:#111; margin-bottom:10px; font-weight:lighter;}*/
+
+#Main 									{min-height:0px;}
+#Article 								{min-height:0px; width:570px; margin:0; padding:0; background:#D3D3D3; opacity:.9; filter:alpha(opacity=90); /*background:url(../i/article_gradient.png) bottom repeat-x;*/}
+
+blockquote.intro				{font-weight:normal; font-style:normal; font-size:32px; line-height:1.1375em; margin:20px 0; padding:0 25px; color:#444;}
+
+.section h2							{margin-left:-10px; font-size:18px; text-transform:uppercase; color:#444; width:540px;}
+.section h2	a						{color:#444;}
+.section h3							{font-size:18px; margin-top:25px; text-transform:uppercase;}
+.section li h4					{font-size:18px; margin-left:-5px; display:inline;}
+.section strong					{text-transform:uppercase;}
+.section								{margin-left:5px; padding:0 10px; opacity:1; filter:alpha(opacity=100)} 
+.section p							{font-size:14px; margin-bottom:10px;}
+.section li							{font-size:14px;}
+
+.section.centered 			{margin-left:auto; margin-right:auto;}
+.column									{width:250px; margin-right:0; padding:0; float:left; font-size:18px; line-height:1.3em; background: transparent;}
+.col-content						{margin:0; padding:20px 10px 10px 20px; width:230px;background:#eee;}
+.shadow									{margin:0 0 -5px -6px;}
+.column h3							{margin:0 0 10px 0; font-size:24px; font-weight:normal; color:#111; text-transform:uppercase;}
+.column strong 					{font-size:18px; text-transform:uppercase;}
+.column.last 						{margin-left:20px;}
+.column.last .quiet,
+.column .quiet					{margin-top:10px; color:#222; text-indent:5px;}
+.column table						{width:240px; margin:0; padding:0; border:0;}
+.column tr, td					{margin:0; padding:0; border:0;}
+.column .shadow 				{background:transparent url(../i/shadow-corner.png) no-repeat left bottom; width:266px; height:30px;}
+
+/* Table elements.
+-------------------------------------------------------------- */
+table										{margin:10px 0; border-top:1px solid #AAA;}
+th											{font-weight:bold; color:#777; background:#FFF;}
+th, td									{padding:4px 10px 4px 5px;}
+td											{border-bottom:1px solid #AAA;}
+.odd										{background:#FAFAF0;}
+tr.even td							{background:#E5ECF9;}
+
+.person 								{font-weight:bold; font-size:18px;}
+.company 								{margin-left:5px; font-size:14px; font-weight:lighter;}
+.title									{font-size:14px; text-transform:uppercase;}
+
+/*.photobullet {padding-right:5px;text-align:center;}*/
+ul.almost-free 					{overflow:hidden; margin:0; }
+table.almost-free 			{display:none; }
+.photobullet 						{display:block; padding-left:55px; margin-right:20px; margin-bottom:5px; }
+.photobullet.starbucks 	{height:52px; height:62px; padding-top:10px; background:transparent url(../i/starbucks-bullet.png) no-repeat 5px 50%; }
+.photobullet.post-it 		{height:42px; padding-top:15px; *height:57px; background:transparent url(../i/post-it-bullet.png) no-repeat 0 50%; }
+.photobullet.cs4 				{height:71px; padding-top:0; background:transparent url(../i/cs4-bullet.png) no-repeat 5px 50%; }
+
+/* Sidebar elements.
+-------------------------------------------------------------- */
+#Sidebar 								{float:right; width:320px; margin:60px 25px 0 10px; padding:0; color:#eee;}
+#Sidebar a:hover				{color:#AAA;}
+#Sidebar p, 
+#Sidebar h2							{color:#fff; font-weight:normal;}
+#Sidebar .box						{margin:0 0 20px 0; background: url(../i/corner.png) no-repeat top right #111; border:1px solid #444;}
+#Sidebar h2							{margin-bottom:0px; text-align:center;}
+
+#Sidebar table					{margin:15px 0 0 0; padding:0; border:0;}
+#Sidebar td							{margin:0; padding:0; border-bottom:15px solid #111; vertical-align:middle; font-size:16px;}
+
+#Sidebar .rowheight			{height:65px;}
+#Sidebar .date					{padding:5px 10px; background:url(../i/calendar.png) no-repeat top; color:#222; font-face:MetaPro; vertical-align:top; text-align:center;}
+#Sidebar .month, .day		{margin-left:-2px; padding:0; font-size:12px;}
+#Sidebar .day						{font-size:22px; line-height:.5em;}
+#Sidebar .desc					{line-height:normal; font-weight:lighter;}
+
+.twitter-icon 					{font-size:18px; background:transparent url(../i/twitter.png) no-repeat 0 0; height:24px; padding:5px 0px 0 0px; margin-left:10px;}
+.twitter-icon a					{margin-left:40px;}
+
+/* Footer elements.
+-------------------------------------------------------------- */
+#Footer 								{height:40px; width:570px; float:left; background-color:#232323;}
+#Footer a 							{color:#636363;}
+.footer-logo						{display:block; float:left; width:63px; height:20px; margin:0 20px 0 0; text-indent:-9999px; background:transparent url(../i/ixda_logo_63x20.png) no-repeat 0 0; }
+cite.legal							{font-style:normal; display:block; float:left; margin:15px 20px; color:#777;}
+
+
+/* Miscellaneous elements.
+-------------------------------------------------------------- */
+.giant									{margin-bottom:20px; font-size:36px; text-align:center;}
+ul.simple 							{margin:0; padding:0; list-style:none;}
+ul.simple li						{display:inline;}
+ul.list									{list-style:none;}
+ul.list li							{margin-bottom:10px; line-height:normal;}
+/* The last piece in any horizontal series */
+.last										{margin-right:0;}

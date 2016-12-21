@@ -1,0 +1,122 @@
+/* ----------------------------------------------------
+
+Description:	Global structural elements
+Filename:			base.css
+Version:			1.0
+Created:			2008.01.14
+LastModified:	2008.01.25 (tzw)
+
+---------------------------------------------------- */
+
+/* Groups everything. */
+.wrapper 			{ width:950px; margin:0 auto;background:#fff; }
+
+/* Use this class on any .span / container to see the grid. */
+.showgrid			{ background:url(../i/grid.png);  }
+
+body 				{ margin:2px 0; background:#efefef;}
+
+
+/* Establish basic layout elements.
+-------------------------------------------------------------- */
+#Header, #Logo, #Search, #Nav, #Main, #Article, #Section, #Sidebar, #Footer {
+	margin:0;
+	padding:0;
+}
+
+
+/* Header elements.
+-------------------------------------------------------------- */
+#Header 			{ height:112px;background:#fff;}
+
+#Logo 				{ float:left;width:150px;height:90px;padding:5px 10px;}
+
+#Search 			{ float:left;width:480px;margin:0 10px;}
+
+#SigninHide 		{ float:left;width:270px;}
+#SigninShow 		{ float:left;width:270px;}
+
+#Utility 			{ }
+
+#Nav 				{ float:left;height:34px;width:950px;}
+
+
+/* Main navigation elements.
+-------------------------------------------------------------- */
+
+/* 	This can be used to show current navigation instead of using a class.
+		The IDs need to be placed on the body tag to make it work */
+body#SectionOne ul li a, body#SectionTwo ul li a, body#SectionThree ul li a, 
+body#SectionFour ul li a, body#SectionFive ul li a, body#SectionSix ul li a, 
+body#SectionSeven ul li a, a:hover {
+}
+
+#Nav ul						{ margin:10px 0 -9px 10px;}
+#Nav li 					{ height:32px; padding:5px 10px; list-style-type:none; display:inline; color: #4a69a5;}
+#Nav li a:link, 
+#Nav li a:visited			{ color:#0089dc; text-decoration: none;}
+#Nav li a:hover 			{ color:#222;}
+#Nav li.current,
+#Nav li.current a:link		{ font-weight:bold; color:#222;}
+#Nav li.current a:link		{ border-bottom:2px solid #222}
+
+
+/* Main content areas that hold articles and section elements.
+-------------------------------------------------------------- */
+#Main 						{ float:none;width:950px;background:#eee;}
+#Article 					{ float:left;margin:0 10px 0 0;width:670px;min-height:540px;background:#fff;}
+#Article .section, .section	{ padding:1.5em;margin-bottom:1.5em;}
+
+#Article .section:after		{ content:".";display:block;height:0;clear:both;visibility:hidden;}/* Clears the .section element and forces everything below it */
+#Article .section			{ display:inline-block;}
+/* Hides from IE-mac \*/
+*html #Article .section 	{ height:1%;}
+#Article .section 			{ display:block;}
+/* End hide from IE-mac */
+
+
+/* Sidebar elements.
+-------------------------------------------------------------- */
+#Sidebar 					{ float:left; width:270px;}
+#Sidebar .box				{ margin:0 10px 10px 0; background:#fff; }
+#Sidebar .box.first			{ margin:10px 10px 10px 0; }
+#Sidebar h3					{ margin-bottom:0px;}
+
+
+/* Footer elements.
+-------------------------------------------------------------- */
+#Footer 					{ float:left;height:120px;width:950px;background:#222;color:#eee; }
+
+
+/* Miscellaneous elements.
+-------------------------------------------------------------- */
+/* Use a .box to create a padded box inside a column.  */ 
+.box					{ padding:1.5em;margin-bottom:1.5em;/*background:#fff;*/}
+
+.left   				{ float:left; }
+.right  				{ float:right; }
+
+.hide   				{ display:none; }
+
+.align-justify  		{ text-align:justify; } 
+.align-left     		{ text-align:left; } 
+.align-center   		{ text-align:center; } 
+.align-right    		{ text-align:right; } 
+
+
+/* Use this to create a horizontal ruler across a column. */
+hr 						{ background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margin: 1em 0 1.45em 0;border:none;}
+hr.space 				{ background:#fff;color:#fff;}
+
+
+/* Clearing floats without extra markup */
+.clearfix:after, 
+.section:after 			{ content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix, .section 	{ display:inline-block;}
+* html .clearfix, 
+* html .section 		{ height:1%;}
+.clearfix, .section 	{ display:block;}
+
+
+/* Regular clearing apply to column that should drop below previous ones. */
+.clear 					{clear:both;display:inline-block;height:0;}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Tour CSS Document */
+
+/* Quick Tour on the Home Page */
+.tour {
+	height:245px;
+	overflow:hidden;/*border-bottom:1px solid #c7d5e1;*/
+}
+.tour * {
+	font-size:1.0125em;
+}
+.tour .container {
+	width:10000px;
+	overflow:hidden;
+}
+.tour .frame {
+	float:none;
+	margin:0;
+	width:611px;
+	height:243px;
+	overflow:hidden;
+	padding:10px;
+	background-color:#fff;
+	border:1px solid #dfdfdf;
+	color:#444;
+}
+html>body .tour .frame {
+	float:left;
+}
+.tour .descr {
+	float:left;
+	margin:10px 10px 0 0;
+	width:250px;
+}
+.descr {
+	height:100px;
+}
+.tour .descr h2 {
+	font-size:1.618em;
+	color:#444;
+	font-weight:bold;
+}
+.tour .descr p {
+	line-height:1.168;
+	color:#555;
+}
+.tour .descr p strong {
+	font-weight:normal;
+	background-color:#efa;
+}
+.tour .gfx {
+	float:left;
+	width:395px;
+	height:220px;
+	margin:0 0 20px 0;
+}
+.tour .gfx img {
+	display:block;
+	margin:0;
+	padding:0;
+}
+/* Tour navigation */
+.tour-nav * {
+	margin:0;
+	padding:0;
+}
+.tour-nav {
+	//height:1.5%;
+}
+.tour-nav ul {
+	margin:0px;
+	padding:0;
+	overflow:hidden;
+	zoom:1;
+}
+.tour-nav li {
+	float:left;
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:100px;
+	background-color:#6F7F93;
+}
+.tour-nav li.selected img {
+	padding:0;
+}
+.tour-nav li:hover {
+	background-image:url(../i/carrot.jpg) width:100px height:13px;
+}
